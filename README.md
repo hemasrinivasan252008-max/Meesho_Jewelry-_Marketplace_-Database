@@ -1,10 +1,13 @@
                              #MEESHO - JEWELRY MARKETPLACE DATABASE
                                           CHAPTER – 1
 #Introduction
+
 The Meesho Jewelry Marketplace Database is a database system designed to manage an online jewelry marketplace. It stores information about customers, sellers, jewelry products, orders, payments, and reviews in an organized manner. The project aims to improve data management, reduce redundancy, and support efficient online shopping. It also demonstrates the practical application of Database Management System (DBMS) concepts in a real-world e-commerce platform.
-Objectives
+#Objectives
+
 The main objective of the Meesho Jewelry Marketplace Database is to design and develop a well-structured database that efficiently manages the operations of an online jewelry marketplace. The system aims to store and organize information about customers, sellers, jewelry products, categories, orders, payments, shopping carts, wishlists, and product reviews in a secure and reliable manner. It also helps customers easily browse and purchase jewelry while enabling sellers to manage their products and orders effectively. By using relational database concepts such as tables, primary keys, foreign keys, and normalization, the project ensures data accuracy, minimizes redundancy, and improves data retrieval. Overall, the database provides a strong foundation for a user-friendly, efficient, and scalable e-commerce platform inspired by Meesho.
 #Key Objectives
+
 •	To design and develop a relational database for a multi-vendor jewelry marketplace inspired by Meesho.
 •	To store and manage customer, seller, product, and category information efficiently.
 •	To maintain accurate records of orders, payments, shopping carts, and wishlists.
@@ -16,11 +19,15 @@ The main objective of the Meesho Jewelry Marketplace Database is to design and d
 •	To demonstrate the practical application of Database Management System (DBMS) concepts in an e-commerce environment.
 
 #Motivation of the Project
+
 The motivation behind the Meesho Jewelry Marketplace Database project is the increasing popularity of online shopping and the growing demand for affordable jewelry through e-commerce platforms. As more customers prefer purchasing jewelry online, there is a need for a well-organized database system to manage large amounts of information, including products, sellers, customers, orders, and payments. A properly designed database helps improve the efficiency, accuracy, and reliability of online marketplace operations. This project was undertaken to understand how Database Management System (DBMS) concepts are applied in real-world e-commerce applications and to develop a scalable and efficient system that supports smooth business operations and enhances the overall shopping experience for both customers and sellers.
 
 #Problem Statement
+
 Managing a jewelry marketplace with multiple sellers and a large number of products can be difficult without a proper database system. Storing customer details, product information, orders, payments, and inventory manually may lead to data redundancy, errors, and slow processing. This project aims to develop a structured database that efficiently manages all marketplace operations, ensuring accurate data storage, quick retrieval, and smooth transaction management.
+
 #Stakeholders
+
 •	Customers – Browse, purchase, and review jewelry products.
 •	Sellers – List products, manage inventory, and process orders.
 •	Administrator – Manage users, products, categories, and overall database operations.
@@ -35,6 +42,7 @@ Managing a jewelry marketplace with multiple sellers and a large number of produ
 •	Business Owners – Monitor sales performance, revenue, and business growth.
 
 #Functional Requirements
+
 The Meesho Jewelry Marketplace Database shall provide the following functionalities:
 Customer Module
 •	Customer Registration and Login
@@ -76,7 +84,9 @@ Shipment Module
 •	Track Shipment Status
 •	Update Delivery Information
 •	Manage Return and Refund Status
+
 #Non-Functional Requirements
+
 The Meesho Jewelry Marketplace Database should satisfy the following quality requirements:
 Performance
 The database should retrieve product, customer, and order information quickly, even with a large number of users and jewelry products.
