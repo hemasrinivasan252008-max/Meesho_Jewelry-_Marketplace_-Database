@@ -1,111 +1,139 @@
-                             #MEESHO - JEWELRY MARKETPLACE DATABASE
-                                          CHAPTER – 1
-#Introduction
+# Meesho Jewelry Marketplace Database
 
-The Meesho Jewelry Marketplace Database is a database system designed to manage an online jewelry marketplace. It stores information about customers, sellers, jewelry products, orders, payments, and reviews in an organized manner. The project aims to improve data management, reduce redundancy, and support efficient online shopping. It also demonstrates the practical application of Database Management System (DBMS) concepts in a real-world e-commerce platform.
-#Objectives
+## Introduction
 
-The main objective of the Meesho Jewelry Marketplace Database is to design and develop a well-structured database that efficiently manages the operations of an online jewelry marketplace. The system aims to store and organize information about customers, sellers, jewelry products, categories, orders, payments, shopping carts, wishlists, and product reviews in a secure and reliable manner. It also helps customers easily browse and purchase jewelry while enabling sellers to manage their products and orders effectively. By using relational database concepts such as tables, primary keys, foreign keys, and normalization, the project ensures data accuracy, minimizes redundancy, and improves data retrieval. Overall, the database provides a strong foundation for a user-friendly, efficient, and scalable e-commerce platform inspired by Meesho.
-#Key Objectives
+The **Meesho Jewelry Marketplace Database** is a relational database designed for a multi-vendor online jewelry marketplace inspired by Meesho. It manages customer information, seller details, jewelry products, categories, shopping carts, orders, payments, shipments, and product reviews. The database is designed to organize data efficiently, reduce redundancy, and support smooth marketplace operations.
 
-•	To design and develop a relational database for a multi-vendor jewelry marketplace inspired by Meesho.
-•	To store and manage customer, seller, product, and category information efficiently.
-•	To maintain accurate records of orders, payments, shopping carts, and wishlists.
-•	To reduce data redundancy and improve data consistency using proper database normalization.
-•	To enable customers to browse, search, and purchase jewelry products easily.
-•	To help sellers manage product listings, inventory, and customer orders effectively.
-•	To ensure secure and efficient storage and retrieval of data using SQL queries.
-•	To provide a scalable database structure that can support future enhancements and additional features.
-•	To demonstrate the practical application of Database Management System (DBMS) concepts in an e-commerce environment.
+---
 
-#Motivation of the Project
+## Objective
 
-The motivation behind the Meesho Jewelry Marketplace Database project is the increasing popularity of online shopping and the growing demand for affordable jewelry through e-commerce platforms. As more customers prefer purchasing jewelry online, there is a need for a well-organized database system to manage large amounts of information, including products, sellers, customers, orders, and payments. A properly designed database helps improve the efficiency, accuracy, and reliability of online marketplace operations. This project was undertaken to understand how Database Management System (DBMS) concepts are applied in real-world e-commerce applications and to develop a scalable and efficient system that supports smooth business operations and enhances the overall shopping experience for both customers and sellers.
+* To design a relational database for a Meesho-inspired jewelry marketplace.
+* To manage customer, seller, and product information efficiently.
+* To maintain records of orders, payments, shipments, and reviews.
+* To reduce data redundancy using proper database design.
+* To ensure data integrity through Primary Keys and Foreign Keys.
+* To demonstrate the practical implementation of DBMS concepts in an e-commerce platform.
 
-#Problem Statement
+---
 
-Managing a jewelry marketplace with multiple sellers and a large number of products can be difficult without a proper database system. Storing customer details, product information, orders, payments, and inventory manually may lead to data redundancy, errors, and slow processing. This project aims to develop a structured database that efficiently manages all marketplace operations, ensuring accurate data storage, quick retrieval, and smooth transaction management.
+## Motivation of the Project
 
-#Stakeholders
+The motivation behind this project is the rapid growth of online shopping and the increasing demand for jewelry through e-commerce platforms. Managing large volumes of customer, seller, product, and order data manually is difficult and prone to errors. This project provides a structured database that improves data management, supports efficient business operations, and offers a better shopping experience for customers and sellers.
 
-•	Customers – Browse, purchase, and review jewelry products.
-•	Sellers – List products, manage inventory, and process orders.
-•	Administrator – Manage users, products, categories, and overall database operations.
-•	Payment Service Providers – Handle secure online payment transactions.
-•	Delivery Partners – Deliver products to customers and update delivery status.
-•	Suppliers – Provide jewelry products and raw materials to sellers.
-•	Warehouse Staff – Manage product storage, stock, and packaging.
-•	Customer Support Team – Resolve customer queries, complaints, and return requests.
-•	Marketing Team – Promote products through offers, discounts, and advertisements.
-•	Inventory Manager – Monitor stock availability and update inventory records.
-•	Return & Refund Team – Process product returns, exchanges, and refunds.
-•	Business Owners – Monitor sales performance, revenue, and business growth.
+---
 
-#Functional Requirements
+## Stakeholders
 
-The Meesho Jewelry Marketplace Database shall provide the following functionalities:
-Customer Module
-•	Customer Registration and Login
-•	Profile Management
-•	Browse Jewelry Products
-•	Search and Filter Jewelry Products
-•	View Product Details
-•	Add Products to Cart
-•	Update or Remove Cart Items
-•	Manage Wishlist
-•	Place Orders
-•	Make Online Payments
-•	Track Order Status
-•	View Order History
-•	Submit Product Reviews and Ratings
-Seller Module
-•	Seller Registration and Login
-•	Add New Jewelry Products
-•	Update Product Details
-•	Delete Product Listings
-•	Manage Product Inventory
-•	View and Process Customer Orders
-•	Update Order Status
-Administrator Module
-•	Manage Customer Accounts
-•	Manage Seller Accounts
-•	Manage Product Categories
-•	Approve and Manage Product Listings
-•	Monitor Inventory
-•	Manage Orders
-•	Generate Sales and Business Reports
-•	Monitor Overall Database Operations
-Payment Module
-•	Store Payment Information
-•	Update Payment Status
-•	Support Multiple Payment Methods (UPI, Debit/Credit Card, Net Banking, Wallets, Cash on Delivery)
-Shipment Module
-•	Store Customer Delivery Address
-•	Track Shipment Status
-•	Update Delivery Information
-•	Manage Return and Refund Status
+* Customers
+* Sellers
+* Administrator
+* Payment Service Providers
+* Delivery Partners
+* Suppliers
+* Warehouse Staff
+* Customer Support Team
+* Inventory Manager
+* Marketing Team
+* Business Owner
 
-#Non-Functional Requirements
+---
 
-The Meesho Jewelry Marketplace Database should satisfy the following quality requirements:
-Performance
-The database should retrieve product, customer, and order information quickly, even with a large number of users and jewelry products.
-Reliability
-The system should provide accurate and consistent data with minimal downtime.
-Security
-Customer accounts, seller information, payment details, and order records should be protected using secure authentication and access control.
-Scalability
-The database should support future growth by accommodating more customers, sellers, jewelry products, and transactions.
-Data Integrity
-The system should maintain accurate relationships between customers, sellers, products, orders, and payments using Primary Keys, Foreign Keys, and constraints.
-Maintainability
-The database should be easy to update and maintain as new features and business requirements are introduced.
-Availability
-The system should remain available to customers and sellers at all times for browsing, purchasing, and managing products.
-Backup and Recovery
-The database should support regular backups and recovery mechanisms to prevent data loss.
-Usability
-The database should have a clear and organized structure that is easy for developers, administrators, and system maintainers to understand and manage.
+## Entities
 
+* Customer
+* Seller
+* Product
+* Category
+* Cart
+* Order
+* Order_Item
+* Payment
+* Shipment
+* Review
+* Inventory
+* Administrator
 
+---
 
+## Attributes
+
+* Customer_ID
+* Customer_Name
+* Email
+* Phone_Number
+* Password
+* Address
+* Seller_ID
+* Seller_Name
+* Store_Name
+* Product_ID
+* Product_Name
+* Description
+* Price
+* Stock
+* Image
+* Category_ID
+* Category_Name
+* Cart_ID
+* Quantity
+* Order_ID
+* Order_Date
+* Total_Amount
+* Order_Status
+* Order_Item_ID
+* Payment_ID
+* Payment_Method
+* Payment_Status
+* Payment_Date
+* Shipment_ID
+* Delivery_Address
+* Shipment_Status
+* Delivery_Date
+* Review_ID
+* Rating
+* Review_Text
+* Review_Date
+* Inventory_ID
+* Stock_Quantity
+* Last_Updated
+* Admin_ID
+* Admin_Name
+
+---
+
+## Primary Keys
+
+* Customer_ID
+* Seller_ID
+* Product_ID
+* Category_ID
+* Cart_ID
+* Order_ID
+* Order_Item_ID
+* Payment_ID
+* Shipment_ID
+* Review_ID
+* Inventory_ID
+* Admin_ID
+
+---
+
+## Relationships
+
+* Customer owns Cart.
+* Customer places Order.
+* Customer writes Review.
+* Customer makes Payment.
+* Seller lists Product.
+* Seller manages Inventory.
+* Seller receives Order.
+* Category categorizes Product.
+* Cart contains Product.
+* Order includes Order_Item.
+* Product appears in Order_Item.
+* Order has Payment.
+* Order has Shipment.
+* Product receives Review.
+* Shipment delivers Order.
+* Administrator manages Customers, Sellers, Products, Categories, and Orders.
