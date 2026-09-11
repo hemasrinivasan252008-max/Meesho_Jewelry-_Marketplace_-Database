@@ -1,5 +1,4 @@
-# <img width="202" height="148" alt="image" src="https://github.com/user-attachments/assets/964d1434-83e7-40f9-9376-ae5263cff675" />
- Meesho Jewelry Marketplace Database
+## Meesho Jewelry Marketplace Database
 
 ## 📌 About the Project
 
