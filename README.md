@@ -47,12 +47,9 @@ The motivation behind this project is the rapid growth of online shopping and th
 * Category
 * Cart
 * Order
-* Order_Item
 * Payment
 * Shipment
 * Review
-* Inventory
-* Administrator
 
 ---
 
@@ -66,40 +63,43 @@ The motivation behind this project is the rapid growth of online shopping and th
 * Address
 * Seller_ID
 * Seller_Name
-* Store_Name
+* Email
+* phone_number
+* Address
 * Product_ID
 * Product_Name
 * Description
 * Price
 * Stock
 * Image
+* Seller_Id
+* category_Id
 * Category_ID
 * Category_Name
-* Cart_ID
+* discription
+* cart_Id
+* customer_id
+* product_id
 * Quantity
 * Order_ID
 * Order_Date
+* customer_Id
 * Total_Amount
 * Order_Status
-* Order_Item_ID
 * Payment_ID
 * Payment_Method
 * Payment_Status
 * Payment_Date
-* Shipment_ID
+*order_Id
 * Delivery_Address
 * Shipment_Status
 * Delivery_Date
-* Review_ID
+* shipment_Id
+* order_Id
+* Review_Id
+* customer_Id
+* product_Id
 * Rating
-* Review_Text
-* Review_Date
-* Inventory_ID
-* Stock_Quantity
-* Last_Updated
-* Admin_ID
-* Admin_Name
-
 ---
 
 ## Primary Keys
