@@ -1,0 +1,81 @@
+CATEGORY_NAME       PRODUCT_NAME             PRICE   STOCK
+------------------  -----------------------  ------  -----
+Anklets             Designer Anklet          299.00     12
+Bangles             Traditional Bangles      349.00     30
+Bracelets           Charm Bracelet           249.00     18
+Earrings            Gold Plated Earrings     299.00     20
+Jewelry Sets        Jewelry Set              699.00     10
+Necklaces           Pearl Necklace            549.00     20
+Nose Pins           Nose Pin                 149.00     20
+Pendants            Heart Pendant             179.00     22
+Rings               Fashion Ring              199.00     25
+
+PRODUCT_ID  PRODUCT_NAME             DESCRIPTION                         PRICE   STOCK  IMAGE          SELLER_ID  CATEGORY_ID
+----------  -----------------------  ----------------------------------  ------  -----  -------------  ---------  -----------
+101         Gold Plated Earrings     Elegant gold plated earrings        299.00    20  earrings.jpg          1            1
+102         Pearl Necklace           Beautiful pearl necklace            549.00    20  necklace.jpg           2            2
+103         Fashion Ring              Stylish fashion ring                199.00    25  ring.jpg                3            3
+104         Traditional Bangles       Traditional decorative bangles      349.00    30  bangles.jpg             4            4
+105         Charm Bracelet            Trendy charm bracelet                249.00    18  bracelet.jpg            5            5
+106         Designer Anklet            Fashionable designer anklet         299.00    12  anklet.jpg              6            6
+107         Heart Pendant              Simple heart shaped pendant          179.00    22  pendant.jpg             7            7
+108         Jewelry Set                Complete matching jewelry set       699.00    10  set.jpg                 8            8
+109         Nose Pin                   Traditional fashion nose pin        149.00    20  nosepin.jpg              9            9
+
+## AFTER UPDATE 
+PRODUCT_ID  PRODUCT_NAME             DESCRIPTION                         PRICE   STOCK  IMAGE          SELLER_ID  CATEGORY_ID
+----------  -----------------------  ----------------------------------  ------  -----  -------------  ---------  -----------
+101         Gold Plated Earrings     Elegant gold plated earrings        299.00    20  earrings.jpg          1            1
+102         Pearl Necklace           Beautiful pearl necklace            600.00    50  necklace.jpg           2            2
+103         Fashion Ring              Stylish fashion ring                199.00    25  ring.jpg                3            3
+104         Traditional Bangles       Traditional decorative bangles      349.00    30  bangles.jpg             4            4
+105         Charm Bracelet            Trendy charm bracelet                249.00    18  bracelet.jpg            5            5
+106         Designer Anklet            Fashionable designer anklet         299.00    12  anklet.jpg              6            6
+107         Heart Pendant              Simple heart shaped pendant          179.00    22  pendant.jpg             7            7
+108         Jewelry Set                Complete matching jewelry set       699.00    10  set.jpg                 8            8
+109         Nose Pin                   Traditional fashion nose pin        149.00    20  nosepin.jpg              9            9
+
+## AFTER DELETE
+PRODUCT_ID  PRODUCT_NAME             DESCRIPTION                         PRICE   STOCK  IMAGE          SELLER_ID  CATEGORY_ID
+----------  -----------------------  ----------------------------------  ------  -----  -------------  ---------  -----------
+101         Gold Plated Earrings     Elegant gold plated earrings        299.00    20  earrings.jpg          1            1
+102         Pearl Necklace           Beautiful pearl necklace            600.00    50  necklace.jpg           2            2
+103         Fashion Ring              Stylish fashion ring                199.00    25  ring.jpg                3            3
+104         Traditional Bangles       Traditional decorative bangles      349.00    30  bangles.jpg             4            4
+105         Charm Bracelet            Trendy charm bracelet                249.00    18  bracelet.jpg            5            5
+106         Designer Anklet            Fashionable designer anklet         299.00    12  anklet.jpg              6            6
+107         Heart Pendant              Simple heart shaped pendant          179.00    22  pendant.jpg             7            7
+108         Jewelry Set                Complete matching jewelry set       699.00    10  set.jpg                 8            8
+109         Nose Pin                   Traditional fashion nose pin        149.00    20  nosepin.jpg              9            9
+
+## Product Listing by Category
+CATEGORY_NAME       PRODUCT_NAME             PRICE   STOCK
+------------------  -----------------------  ------  -----
+Anklets             Designer Anklet          299.00     12
+Bangles             Traditional Bangles      349.00     30
+Bracelets           Charm Bracelet           249.00     18
+Earrings            Gold Plated Earrings     299.00     20
+Jewelry Sets        Jewelry Set              699.00     10
+Necklaces           Pearl Necklace           600.00     50
+Nose Pins           Nose Pin                 149.00     20
+Pendants            Heart Pendant            179.00     22
+Rings               Fashion Ring             199.00     25
+
+## Products in a Specific Category
+CATEGORY_NAME       PRODUCT_NAME       PRICE   STOCK
+------------------  -----------------  ------  -----
+Necklaces           Pearl Necklace     600.00     50
+
+## Category Report
+CATEGORY_NAME       PRODUCT_COUNT
+------------------  -------------
+Anklets                       1
+Bangles                       1
+Bracelets                     1
+Earrings                      1
+Hair Accessories              0
+Jewelry Sets                  1
+Necklaces                     1
+Nose Pins                     1
+Pendants                      1
+Rings                         1
