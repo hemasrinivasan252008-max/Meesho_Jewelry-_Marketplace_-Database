@@ -1,0 +1,131 @@
+ SELECT * FROM Seller;
+SELLER_ID SELLER_NAME          STORE_NAME
+--------- -------------------- --------------------
+EMAIL                          PHONE_NUMBER    ADDRESS
+------------------------------ --------------- --------------------
+      101 Anitha Kumar         Elegant Jewels
+anitha@gmail.com               9876543210      Chennai
+
+      102 Priya Sharma         Shine Collections
+priya@gmail.com                9876543211      Bangalore
+
+      103 Kavitha Raj          Jewel World
+kavitha@gmail.com              9876543212      Coimbatore
+
+
+SELLER_ID SELLER_NAME          STORE_NAME
+--------- -------------------- --------------------
+EMAIL                          PHONE_NUMBER    ADDRESS
+------------------------------ --------------- --------------------
+      104 Divya Singh          Trendy Jewels
+divya@gmail.com                9876543213      Hyderabad
+
+      105 Meena Devi           Royal Accessories
+meena@gmail.com                9876543214      Mumbai
+
+ SELECT * FROM Product;
+PRODUCT_ID PRODUCT_NAME              DESCRIPTION
+---------- ------------------------- ----------------------------------------
+   PRICE IMAGE                     SELLER_ID
+-------- ------------------------- ---------
+         1 Gold Plated Necklace      Elegant gold plated necklace for women
+  599.00 gold_necklace.jpg               101
+
+         2 Diamond Earrings          Stylish diamond earrings for women
+  799.00 diamond_earrings.jpg            102
+
+         3 Pearl Bracelet            Beautiful pearl bracelet for women
+  450.00 pearl_bracelet.jpg              103
+
+
+PRODUCT_ID PRODUCT_NAME              DESCRIPTION
+---------- ------------------------- ----------------------------------------
+   PRICE IMAGE                     SELLER_ID
+-------- ------------------------- ---------
+         4 Silver Anklet             Traditional silver anklet design
+  350.00 silver_anklet.jpg               104
+
+         5 Stone Ring                Trendy stone ring for women
+  299.00 stone_ring.jpg                  105
+
+   SELECT * FROM Inventory;
+
+INVENTORY_ID PRODUCT_ID  SELLER_ID STOCK_QUANTITY STOCK_STATUS
+------------ ---------- ---------- -------------- --------------------
+           1          1        101             50 Available
+           2          2        102             30 Available
+           3          3        103              0 Unavailable
+           4          4        104             25 Available
+           5          5        105              0 Unavailable
+
+#SELLER AND PRODUCT INFORMATION
+INVENTORY_ID PRODUCT_NAME              SELLER_NAME          STORE_NAME
+------------ ------------------------- -------------------- --------------------
+EMAIL                          PHONE_NUMBER    STOCK_QUANTITY
+------------------------------ --------------- --------------
+STOCK_STATUS
+--------------------
+           1 Gold Plated Necklace      Anitha Kumar         Elegant Jewels
+anitha@gmail.com               9876543210                  50
+Available
+
+           2 Diamond Earrings          Priya Sharma         Shine Collections
+priya@gmail.com                9876543211                  30
+Available
+
+INVENTORY_ID PRODUCT_NAME              SELLER_NAME          STORE_NAME
+------------ ------------------------- -------------------- --------------------
+EMAIL                          PHONE_NUMBER    STOCK_QUANTITY
+------------------------------ --------------- --------------
+STOCK_STATUS
+--------------------
+
+           3 Pearl Bracelet            Kavitha Raj          Jewel World
+kavitha@gmail.com              9876543212                   0
+Unavailable
+
+           4 Silver Anklet             Divya Singh          Trendy Jewels
+divya@gmail.com                9876543213                  25
+
+INVENTORY_ID PRODUCT_NAME              SELLER_NAME          STORE_NAME
+------------ ------------------------- -------------------- --------------------
+EMAIL                          PHONE_NUMBER    STOCK_QUANTITY
+------------------------------ --------------- --------------
+STOCK_STATUS
+--------------------
+Available
+
+           5 Stone Ring                Meena Devi           Royal Accessories
+meena@gmail.com                9876543214                   0
+Unavailable
+
+#INVENTORY STATUS
+INVENTORY_ID PRODUCT_NAME              STORE_NAME           STOCK_QUANTITY
+------------ ------------------------- -------------------- --------------
+STOCK_STATUS
+--------------------
+           1 Gold Plated Necklace      Elegant Jewels                   50
+Available
+
+           2 Diamond Earrings          Shine Collections                30
+Available
+
+           4 Silver Anklet             Trendy Jewels                    25
+Available
+
+
+INVENTORY_ID PRODUCT_NAME              STORE_NAME           STOCK_QUANTITY
+------------ ------------------------- -------------------- --------------
+STOCK_STATUS
+--------------------
+           3 Pearl Bracelet            Jewel World                       0
+Unavailable
+
+           5 Stone Ring                Royal Accessories                 0
+Unavailable
+
+#INVENTORY UPDATE
+
+INVENTORY_ID PRODUCT_ID SELLER_ID STOCK_QUANTITY STOCK_STATUS
+------------ ---------- --------- -------------- --------------------
+           3          3       103             20 Available
