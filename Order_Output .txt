@@ -1,0 +1,37 @@
+SQL> SELECT * FROM ORDERS;
+
+  ORDER_ID CUSTOMER_ID ORDER_DAT TOTAL_AMOUNT ORDER_STATUS
+---------- ----------- --------- ------------ ------------------------------
+      1001           1 22-SEP-26         1597 Pending
+      1002           2 22-SEP-26          999 Packed
+      1003           3 23-SEP-26          599 Shipped
+      1004           4 23-SEP-26          449 Delivered
+      1005           5 24-SEP-26          349 Pending
+
+SQL> SELECT * FROM ORDER_DETAILS;
+
+ORDER_DETAIL_ID   ORDER_ID PRODUCT_ID   QUANTITY
+--------------- ---------- ---------- ----------
+              1       1001          1          2
+              2       1001          3          1
+              3       1002          2          1
+              4       1003          4          1
+              5       1004          5          1
+
+UPDATE ORDERS
+SET ORDER_STATUS = 'Shipped'
+WHERE ORDER_ID = 1001;
+
+COMMIT;
+
+commit completed
+
+
+CUSTOMER_NAME                                        ORDER_ID ORDER_DAT PRODUCT_NAME        QUANTITY TOTAL_AMOUNT ORDER_STATUS
+----------------------------------------------       ---------- --------- ------------------------- ---------- ------------ ----------
+Priya                                                    1001 22-SEP-26 Gold Plated Necklace                2         1597 Shipped
+Priya                                                    1001 22-SEP-26 Pearl Bracelet     1          1597 Shipped
+Anu                                                      1002 22-SEP-26 Diamond Earrings   1           999 Packed
+Divya                                                    1003 23-SEP-26 Silver Anklet      1           599 Shipped
+Kaviya                                                   1004 23-SEP-26 Stone Ring       
+
