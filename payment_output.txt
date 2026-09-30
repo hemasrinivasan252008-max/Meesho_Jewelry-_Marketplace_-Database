@@ -1,0 +1,70 @@
+SQL> CREATE TABLE PAYMENT (
+  2      PAYMENT_ID NUMBER(5) PRIMARY KEY,
+  3      ORDER_ID NUMBER(5),
+  4      PAYMENT_MODE VARCHAR2(30) NOT NULL,
+  5      PAYMENT_DATE DATE NOT NULL,
+  6      PAYMENT_AMOUNT NUMBER(10,2) NOT NULL,
+  7      PAYMENT_STATUS VARCHAR2(30) NOT NULL,
+  8      CONSTRAINT FK_PAYMENT_ORDER
+  9          FOREIGN KEY (ORDER_ID)
+ 10          REFERENCES ORDERS(ORDER_ID)
+ 11  );
+
+Table created.
+
+SQL> SELECT * FROM PAYMENT;
+
+PAYMENT_ID   ORDER_ID PAYMENT_MODE                   PAYMENT_D PAYMENT_AMOUNT PAYMENT_STATUS
+---------- ---------- ------------------------------ --------- -------------- ------------------------------
+         1       1001 UPI                            22-SEP-26           1198 Successful
+         2       1002 Card                           22-SEP-26            999 Successful
+         3       1003 UPI                            23-SEP-26            599 Successful
+         4       1004 Cash on Delivery               23-SEP-26            449 Successful
+         5       1005 Card                           24-SEP-26            349 Failed
+         6       1006 UPI                            24-SEP-26            799 Pending
+
+6 rows selected.
+
+
+PAYMENT_ID   ORDER_ID PAYMENT_MODE                   PAYMENT_D PAYMENT_AMOUNT PAYMENT_STATUS
+---------- ---------- ------------------------------ --------- -------------- ------------------------------
+         1       1001 UPI                            22-SEP-26           1198 Successful
+         2       1002 Card                           22-SEP-26            999 Successful
+         3       1003 UPI                            23-SEP-26            599 Successful
+         4       1004 Cash on Delivery               23-SEP-26            449 Successful
+
+
+
+PAYMENT_ID   ORDER_ID PAYMENT_MODE                   PAYMENT_D PAYMENT_AMOUNT PAYMENT_STATUS
+---------- ---------- ------------------------------ --------- -------------- ------------------------------
+         5       1005 Card                           24-SEP-26            349 Failed
+
+PAYMENT_ID   ORDER_ID PAYMENT_MODE                   PAYMENT_D PAYMENT_AMOUNT PAYMENT_STATUS
+---------- ---------- ------------------------------ --------- -------------- ------------------------------
+         6       1006 UPI                            24-SEP-26            799 Pending
+
+
+
+PAYMENT_MODE                   TOTAL_TRANSACTIONS
+------------------------------ ------------------
+UPI                                             3
+Card                                            2
+Cash on Delivery                                1
+
+
+PAYMENT_MODE                   TOTAL_AMOUNT
+------------------------------ ------------
+UPI                                    2596
+Card                                   1348
+Cash on Delivery                        449
+
+PAYMENT_ID   ORDER_ID PAYMENT_MODE                   PAYMENT_D PAYMENT_AMOUNT PAYMENT_STATUS                 ORDER_STATUS
+---------- ---------- ------------------------------ --------- -------------- ------------------------------ ------------------------------
+         1       1001 UPI                            22-SEP-26           1198 Successful                     Shipped
+         2       1002 Card                           22-SEP-26            999 Successful                     Packed
+         3       1003 UPI                            23-SEP-26            599 Successful                     Shipped
+         4       1004 Cash on Delivery               23-SEP-26            449 Successful                     Delivered
+         5       1005 Card                           24-SEP-26            349 Failed                         Pending
+         6       1006 UPI                            24-SEP-26            799 Pending                        Pending
+
+6 rows selected.
