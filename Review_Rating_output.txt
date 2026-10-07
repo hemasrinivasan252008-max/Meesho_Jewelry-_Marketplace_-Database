@@ -1,0 +1,65 @@
+REVIEW_ID CUSTOMER_ID PRODUCT_ID REVIEW_TEXT                    REVIEW_DATE
+--------- ----------- ---------- ------------------------------ ------------
+        1           1          1 Good quality necklace          01-OCT-26
+        2           2          2 Beautiful earrings             02-OCT-26
+        3           3          3 Nice bracelet                  03-OCT-26
+        4           4          4 Good quality anklet            04-OCT-26
+        5           5          5 Excellent ring                 05-OCT-26
+
+
+SQL> SELECT * FROM RATING;
+
+ RATING_ID CUSTOMER_ID PRODUCT_ID     RATING RATING_DA
+---------- ----------- ---------- ---------- ---------
+         1           1          1          5 01-OCT-26
+         2           2          2          4 02-OCT-26
+         3           3          3          5 03-OCT-26
+         4           4          4          3 04-OCT-26
+         5           5          5          4 05-OCT-26
+
+CUSTOMER_ID REVIEW_ID REVIEW_TEXT                              REVIEW_DATE
+----------- --------- ---------------------------------------- ------------
+          1         1 Good quality necklace                    01-OCT-26
+          2         2 Beautiful earrings                       02-OCT-26
+          3         3 Nice bracelet                            03-OCT-26
+          4         4 Good quality anklet                      04-OCT-26
+          5         5 Excellent ring                           05-OCT-26
+          1         6 Good quality necklace                    01-OCT-26
+          2         7 Beautiful earrings                       02-OCT-26
+          3         8 Nice bracelet                            03-OCT-26
+          4         9 Good quality anklet                      04-OCT-26
+          5        10 Excellent ring                           05-OCT-26
+
+
+PRODUCT_ID PRODUCT_NAME                                                                                          RATING_ID     RATING RATING_DA
+---------- ---------------------------------------------------------------------------------------------------- ---------- ---------- ---------
+         1 Gold Plated Necklace                                                                                          1          5 01-OCT-26
+         2 Diamond Earrings                                                                                              2          4 02-OCT-26
+         3 Pearl Bracelet                                                                                                3          5 03-OCT-26
+         4 Silver Anklet                                                                                                 4          3 04-OCT-26
+         5 Stone Ring                                                                                                    5          4 05-OCT-26
+
+
+PRODUCT_ID PRODUCT_NAME                                                                                         AVERAGE_RATING
+---------- ---------------------------------------------------------------------------------------------------- --------------
+         1 Gold Plated Necklace                                                                                              5
+         3 Pearl Bracelet                                                                                                    5
+         5 Stone Ring                                                                                                        4
+         2 Diamond Earrings                                                                                                  4
+         4 Silver Anklet                                                                                                     3
+
+
+PRODUCT_ID AVERAGE_RATING
+---------- --------------
+         3              5
+         1              5
+         5              4
+         2              4
+
+
+PRODUCT_ID PRODUCT_NAME                                                                                         AVERAGE_RATING
+---------- ---------------------------------------------------------------------------------------------------- --------------
+         3 Pearl Bracelet                                                                                                    5
+         1 Gold Plated Necklace                                                                                              5
+         5 Stone Ring                                                                                                        4
+         2 Diamond Earrings                                                                                                  4
